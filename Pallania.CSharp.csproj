@@ -70,11 +70,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Khemii\scripts\Character.cs" />
-    <Compile Include="Assets\Khemii\scripts\CharacterAttributes.cs" />
-    <Compile Include="Assets\Khemii\scripts\CharacterPerformance.cs" />
-    <Compile Include="Assets\Khemii\scripts\CharacterSkills.cs" />
     <Compile Include="Assets\Khemii\scripts\ClickListener.cs" />
+    <Compile Include="Assets\Khemii\scripts\IUsable.cs" />
+    <Compile Include="Assets\Khemii\scripts\abilities\Ability.cs" />
+    <Compile Include="Assets\Khemii\scripts\characters\Character.cs" />
+    <Compile Include="Assets\Khemii\scripts\characters\Human.cs" />
+    <Compile Include="Assets\Khemii\scripts\characters\NPC.cs" />
+    <Compile Include="Assets\Khemii\scripts\characters\RealNPC.cs" />
+    <Compile Include="Assets\Khemii\scripts\skills\Skill.cs" />
+    <Compile Include="Assets\Khemii\scripts\things\Potion.cs" />
+    <Compile Include="Assets\Khemii\scripts\things\Thing.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
