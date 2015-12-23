@@ -15,4 +15,8 @@ public class ClickListener : MonoBehaviour
     {
         Application.Quit();
     }
+    public void StartGame()
+    {
+        Application.LoadLevel("gameStart");
+    }
 }

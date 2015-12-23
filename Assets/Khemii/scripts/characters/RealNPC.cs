@@ -13,19 +13,19 @@ using System.Text;
         switch (type)
         {
             case Type.Warrrior:
-                Health = Level * 50;
-                Magic = Level + 10;
-                Stamina = Level * 25;
+                health = Level * 50;
+                magic = Level + 10;
+                stamina = Level * 25;
                 break;
             case Type.Wizard:
-                Health = Level * 3;
-                Magic = Level * 100;
-                Stamina = Level * 10;
+                health = Level * 3;
+                magic = Level * 100;
+                stamina = Level * 10;
                 break;
             case Type.Archer:
-                Health = Level * 15;
-                Magic = Level * 5;
-                Stamina = Level * 50;
+                health = Level * 15;
+                magic = Level * 5;
+                stamina = Level * 50;
                 break;
         }
         }
