@@ -5,12 +5,12 @@ using System.Text;
 
     public class Abilities
     {
-    public uint Strength;
-    public uint Vitality;
-    public uint Willpower;
-    public uint Intelligence;
-    public uint Dexterity;
-    public uint Endurance;
+    public uint Strength { get; set; }
+    public uint Vitality { get; set; }
+    public uint Willpower { get; set; }
+    public uint Intelligence { get; set; }
+    public uint Dexterity { get; set; }
+    public uint Endurance { get; set; }
     public Abilities(uint strength, uint vitality, uint willpower, uint intelligence, uint dexterity, uint endurance)
     {
         Strength = strength;

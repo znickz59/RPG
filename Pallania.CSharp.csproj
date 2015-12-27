@@ -77,9 +77,9 @@
     <Compile Include="Assets\Khemii\scripts\ClickListener.cs" />
     <Compile Include="Assets\Khemii\scripts\IUsable.cs" />
     <Compile Include="Assets\Khemii\scripts\abilities\Ability.cs" />
+    <Compile Include="Assets\Khemii\scripts\characters\AttributesManager.cs" />
     <Compile Include="Assets\Khemii\scripts\characters\Character.cs" />
     <Compile Include="Assets\Khemii\scripts\characters\Hero.cs" />
-    <Compile Include="Assets\Khemii\scripts\characters\HeroAttributesChangedListener.cs" />
     <Compile Include="Assets\Khemii\scripts\characters\NPC.cs" />
     <Compile Include="Assets\Khemii\scripts\characters\RealNPC.cs" />
     <Compile Include="Assets\Khemii\scripts\gui\Attributes.cs" />

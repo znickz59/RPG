@@ -9,12 +9,9 @@ public class Hud : MonoBehaviour {
     public ParticleSystem levelUp;
 	void Start ()
     {
-        Hero.attributeChanged += LevelUpEffect;
+        
     }
-	private void LevelUpEffect()
-    {
-        levelUp.Play();
-    }
+	
 	void Update ()
     {
         healthBar.GetComponentInChildren<Text>().text = Mathf.Round(Hero.Health) + " / " + Hero.MaxHealth;
