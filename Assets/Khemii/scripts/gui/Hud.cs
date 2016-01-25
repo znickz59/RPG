@@ -3,7 +3,6 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class Hud : MonoBehaviour {
-
     public Image healthBar, magicBar, staminaBar, expBar;
     public Text levelText;
     public ParticleSystem levelUp;

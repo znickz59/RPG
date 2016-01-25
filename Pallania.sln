@@ -1,7 +1,7 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pallania.CSharp", "Pallania.CSharp.csproj", "{2D90384D-D7BD-B64B-EF3D-2110CF277F38}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{52143B18-711F-77C6-DAC7-003499CC060D}") = "Pallania", "Assembly-CSharp.csproj", "{609785C0-3A38-FE62-9A64-8619EACF68EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,12 +9,32 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2D90384D-D7BD-B64B-EF3D-2110CF277F38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2D90384D-D7BD-B64B-EF3D-2110CF277F38}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2D90384D-D7BD-B64B-EF3D-2110CF277F38}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2D90384D-D7BD-B64B-EF3D-2110CF277F38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{609785C0-3A38-FE62-9A64-8619EACF68EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{609785C0-3A38-FE62-9A64-8619EACF68EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{609785C0-3A38-FE62-9A64-8619EACF68EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{609785C0-3A38-FE62-9A64-8619EACF68EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+																									GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.inheritsSet = null
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.inheritsSet = Mono
+		$2.inheritsScope = text/x-csharp
+		$2.scope = text/x-csharp
+		$0.TextStylePolicy = $3
+		$3.FileWidth = 120
+		$3.TabWidth = 4
+		$3.IndentWidth = 4
+		$3.EolMarker = Unix
+		$3.inheritsSet = Mono
+		$3.inheritsScope = text/plain
+		$3.scope = text/plain
+	EndGlobalSection
+
 EndGlobal

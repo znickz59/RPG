@@ -1,0 +1,37 @@
+Initialize engine version: 5.2.0f3 (e7947df39b5c)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce 410M (ID=0x1054)
+    Vendor:   NVIDIA
+    VRAM:     979 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\plague\Documents\Pallania\Pallania_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\plague\Documents\Pallania\Pallania_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\plague\Documents\Pallania\Pallania_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\plague\Documents\Pallania\Pallania_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\plague\Documents\Pallania\Pallania_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\plague\Documents\Pallania\Pallania_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\plague\Documents\Pallania\Pallania_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\plague\Documents\Pallania\Pallania_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\plague\Documents\Pallania\Pallania_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.055 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\plague\Documents\Pallania\Pallania_Data\Managed\System.dll (this message is harmless)
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 11e0 -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.590648 ms
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 209.
+Total: 0.425690 ms (FindLiveObjects: 0.052653 ms CreateObjectMapping: 0.041051 ms MarkObjects: 0.212399 ms  DeleteObjects: 0.116462 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.686252 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 499.
+Total: 0.633181 ms (FindLiveObjects: 0.024541 ms CreateObjectMapping: 0.017848 ms MarkObjects: 0.428814 ms  DeleteObjects: 0.161084 ms)
+

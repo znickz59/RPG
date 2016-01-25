@@ -6,8 +6,12 @@ using UnityEngine;
 
 public abstract class Skill : MonoBehaviour
     {
-    public enum Stage { Basic = 1, Low, Medium, High, Best }
-    public static double Effect;
-
+	protected internal enum Stage { Basic = 1, Low, Medium, High, Best }
+	internal static Stage stage = default(Stage);
+	protected internal abstract uint Effect<TAbility>(int index, params TAbility[] Abilities) where TAbility : struct;
+	protected internal virtual Stage SkillUp()
+	{
+		return ++stage;
+	}
     }
 

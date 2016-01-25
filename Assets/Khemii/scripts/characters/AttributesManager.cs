@@ -5,61 +5,66 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.Scripting;
 public delegate void AttributesChangedEventArgs();
-public delegate void AtributesModifyEventArgs(uint value);
+public delegate void AttributesModifyEventArgs(uint value);
     public class AttributesManager
     {
-    public event AttributesChangedEventArgs attributeModified = delegate { };
-    public uint CalculateRequiredExperience()
+	//public event AttributesChangedEventArgs attributeChanged = ()=>{};
+	//public event AttributesModifyEventArgs attributeModified = i => {};
+    internal uint CalculateRequiredExperience()
     {
         return (Hero.Level * (Hero.Level + 1) / 2) * 1000;
     }
-    public void ModifyHealth(uint value)
+	internal void ModifyHealth(uint value)
     {
         Hero.Add(value, "Health");
     }
-    public void ModifyMagic(uint value)
+	internal void ModifyMagic(uint value)
     {
         Hero.Add(value, "Magic");
     }
-    public void ModifyStamina(uint value)
+	internal void ModifyStamina(uint value)
     {
         Hero.Add(value, "Stamina");
     }
-    public void SetMaxHealth(uint value)
+	internal void AddExperience(uint value)
+	{
+		Hero.Add (value, "Experience");
+	}
+	internal void SetMaxHealth(uint value)
     {
         Hero.Set(value, "MaxHealth");
     }
-    public void SetMaxMagic(uint value)
+	internal void SetMaxMagic(uint value)
     {
         Hero.Set(value, "MaxMagic");
     }
-    public void SetMaxStamina(uint value)
+	internal void SetMaxStamina(uint value)
     {
         Hero.Set(value, "MaxStamina");
     }
-    public void StrengthUp()
+	internal void StrengthUp()
     {
         Hero.Up("Strength");
     }
-    public void VitalityUp()
+	internal void VitalityUp()
     {
         Hero.Up("Vitality");
         SetMaxHealth(Hero.Abils.Vitality * 5);
     }
-    public void IntelligenceUp()
+	internal void IntelligenceUp()
     {
         Hero.Up("Intelligence");
     }
-    public void WillpowerUp()
+	internal void WillpowerUp()
     {
         Hero.Up("Willpower");
         SetMaxMagic(Hero.Abils.Willpower * 5);
     }
-    public void DexterityUp()
+	internal void DexterityUp()
     {
         Hero.Up("Dexterity");
     }
-    public void EnduranceUp()
+	internal void EnduranceUp()
     {
         Hero.Up("Endurance");
         SetMaxStamina(Hero.Abils.Endurance * 10);

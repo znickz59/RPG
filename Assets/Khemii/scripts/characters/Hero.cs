@@ -4,7 +4,7 @@ using System.Collections;
 public class Hero : Character
 {
     AttributesManager am = new AttributesManager();
-    private static uint maxhealth, maxmagic, maxstamina, experience, requiredExperience, abilityPoints = 2;
+    private static uint maxhealth, maxmagic, maxstamina, experience, requiredExperience, abilityPoints = 0;
     private static Abilities abilities = new Abilities(10, 10, 10, 10, 10, 10);
     public static Abilities Abils
     {
@@ -16,7 +16,8 @@ public class Hero : Character
     public static uint MaxHealth { get { return maxhealth; } }
     public static uint MaxMagic { get { return maxmagic; } }
     public static uint MaxStamina { get { return maxstamina; } }
-    public static void Set(uint value, string name)
+	#region Static Methods
+    internal static void Set(uint value, string name)
     {
         switch (name)
         {
@@ -25,16 +26,17 @@ public class Hero : Character
             case "MaxStamina": maxstamina = value; break;
         }
     }
-    public static void Add(uint value, string name)
+    internal static void Add(uint value, string name)
     {
         switch (name)
         {
             case "Health": health += value; break;
             case "Magic": magic += value; break;
             case "Stamina": stamina += value; break;
+			case "Experience": experience+= value; break;
         }
     }
-    public static void Up(string name)
+    internal static void Up(string name)
     {
         if (abilityPoints != 0)
         {
@@ -50,6 +52,7 @@ public class Hero : Character
             abilityPoints--;
         }
     }
+	#endregion
     private void LevelUp()
     {
         experience -= requiredExperience;
@@ -71,9 +74,9 @@ public class Hero : Character
     }
     void Awake()
     {
-        health = 5;
-        magic = 10;
-        stamina = 15;
+        health = maxhealth;
+        magic = maxmagic;
+        stamina = maxstamina;
         experience = 0;
         am.SetMaxHealth(abilities.Vitality * 5);
         am.SetMaxMagic(abilities.Willpower * 5);

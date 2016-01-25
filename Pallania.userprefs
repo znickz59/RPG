@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Khemii\scripts\skills\Fighter.cs">
+    <Files>
+      <File FileName="Assets\Khemii\scripts\skills\Skill.cs" Line="14" Column="18" />
+      <File FileName="Assets\Khemii\scripts\skills\Fighter.cs" Line="30" Column="6" />
+      <File FileName="Assets\Khemii\scripts\characters\AttributesManager.cs" Line="14" Column="6" />
+      <File FileName="Assets\Khemii\scripts\characters\Hero.cs" Line="69" Column="32" />
+      <File FileName="Assets\Khemii\scripts\characters\Character.cs" Line="1" Column="1" />
+      <File FileName="Assets\Khemii\scripts\skills\SkillsManager.cs" Line="13" Column="17" />
+      <File FileName="Assets\Khemii\scripts\skills\Wizard.cs" Line="28" Column="3" />
+      <File FileName="Assets\Khemii\scripts\ClickListener.cs" Line="63" Column="32" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
