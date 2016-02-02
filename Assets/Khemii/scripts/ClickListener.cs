@@ -6,6 +6,10 @@ public class ClickListener : MonoBehaviour
 {
     AttributesManager am = new AttributesManager();
 	SkillsManager sm = new SkillsManager();
+    void Start()
+    {
+       
+    }
     void Update()
     {
         if ((Input.GetKey(KeyCode.LeftAlt) || Input.GetKey(KeyCode.RightAlt)) && Input.GetKey(KeyCode.F4)) Application.Quit();
@@ -22,6 +26,7 @@ public class ClickListener : MonoBehaviour
     {
         Application.LoadLevel("gameStart");
     }
+	#region Abilities Click
     public void StrengthButton_Click()
     {
         am.StrengthUp();
@@ -46,44 +51,32 @@ public class ClickListener : MonoBehaviour
     {
         am.EnduranceUp();
     }
-	public Image[] skills = new Image[4];
-	private void DisableAll()
-	{
-		foreach(var b in skills)
-		{
-			b.enabled = false;
-			foreach(var v in b.GetComponentsInChildren<Image>())
-			{
-				v.enabled = false;
-			}
-		}
-	}
-	private void Enable(int index)
-	{
-		skills[index].enabled = true;
-		foreach(var v in skills[index].GetComponentsInChildren<Image>())
-		{
-			v.enabled = true;
-		}
-	}
+	#endregion
+	#region Skills Click
 	public void WarriorButton_Click()
 	{
-		DisableAll ();
-		Enable (0);
+		Skills.dea();
+		Skills.eea(0);
 	}
 	public void MagicButton_Click()
 	{
-		DisableAll ();
-		Enable (1);
+		Skills.dea();
+		Skills.eea(1);
 	}
 	public void ThiefButton_Click()
 	{
-		DisableAll ();
-		Enable (2);
+		Skills.dea();
+		Skills.eea(2);
 	}
 	public void OtherButton_Click()
 	{
-		DisableAll ();
-		Enable (3);
+		Skills.dea();
+		Skills.eea(3);
 	}
+    public void FighterClick()
+    {
+        sm.Unlock<Fighter>();
+        sm.SkillUp(new Fighter());
+    }
+	#endregion
 }

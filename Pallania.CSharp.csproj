@@ -70,20 +70,30 @@
   <ItemGroup>
     <Compile Include="Assets\Khemii\scripts\ClickListener.cs" />
     <Compile Include="Assets\Khemii\scripts\IUsable.cs" />
+    <Compile Include="Assets\Khemii\scripts\XmlReader.cs" />
     <Compile Include="Assets\Khemii\scripts\abilities\Ability.cs" />
     <Compile Include="Assets\Khemii\scripts\characters\AttributesManager.cs" />
     <Compile Include="Assets\Khemii\scripts\characters\Character.cs" />
     <Compile Include="Assets\Khemii\scripts\characters\Hero.cs" />
     <Compile Include="Assets\Khemii\scripts\characters\NPC.cs" />
     <Compile Include="Assets\Khemii\scripts\characters\RealNPC.cs" />
+    <Compile Include="Assets\Khemii\scripts\controls\Controls.cs" />
     <Compile Include="Assets\Khemii\scripts\gui\Attributes.cs" />
     <Compile Include="Assets\Khemii\scripts\gui\Hud.cs" />
     <Compile Include="Assets\Khemii\scripts\gui\Inventory.cs" />
+    <Compile Include="Assets\Khemii\scripts\gui\skills\InfoVizualizer.cs" />
+    <Compile Include="Assets\Khemii\scripts\gui\skills\Skills.cs" />
     <Compile Include="Assets\Khemii\scripts\items\Heal.cs" />
     <Compile Include="Assets\Khemii\scripts\items\Potion.cs" />
     <Compile Include="Assets\Khemii\scripts\items\SlotItem.cs" />
+    <Compile Include="Assets\Khemii\scripts\skills\Archer.cs" />
     <Compile Include="Assets\Khemii\scripts\skills\Fighter.cs" />
     <Compile Include="Assets\Khemii\scripts\skills\Skill.cs" />
+    <Compile Include="Assets\Khemii\scripts\skills\SkillsManager.cs" />
+    <Compile Include="Assets\Khemii\scripts\skills\Wizard.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Resources\Xml\ENG\SkillsDescription.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

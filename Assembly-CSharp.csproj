@@ -57,6 +57,8 @@
      <Compile Include="Assets\Khemii\scripts\gui\Attributes.cs" />
      <Compile Include="Assets\Khemii\scripts\gui\Hud.cs" />
      <Compile Include="Assets\Khemii\scripts\gui\Inventory.cs" />
+     <Compile Include="Assets\Khemii\scripts\gui\skills\InfoVizualizer.cs" />
+     <Compile Include="Assets\Khemii\scripts\gui\skills\Skills.cs" />
      <Compile Include="Assets\Khemii\scripts\items\Heal.cs" />
      <Compile Include="Assets\Khemii\scripts\items\Potion.cs" />
      <Compile Include="Assets\Khemii\scripts\items\SlotItem.cs" />
@@ -64,11 +66,17 @@
      <Compile Include="Assets\Khemii\scripts\skills\Skill.cs" />
      <Compile Include="Assets\Khemii\scripts\skills\SkillsManager.cs" />
      <Compile Include="Assets\Khemii\scripts\skills\Wizard.cs" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

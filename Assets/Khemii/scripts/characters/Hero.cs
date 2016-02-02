@@ -10,7 +10,7 @@ public class Hero : Character
     {
         get { return abilities; }
     }
-    public static float Experience { get { return experience; } }
+    public static uint Experience { get { return experience; } }
     public static uint RequiredExperience { get { return requiredExperience; } }
     public static uint AbilityPoints { get { return abilityPoints; } }
     public static uint MaxHealth { get { return maxhealth; } }
@@ -26,14 +26,18 @@ public class Hero : Character
             case "MaxStamina": maxstamina = value; break;
         }
     }
-    internal static void Add(uint value, string name)
+    internal static void Add(int value, string name)
     {
         switch (name)
         {
             case "Health": health += value; break;
             case "Magic": magic += value; break;
             case "Stamina": stamina += value; break;
-			case "Experience": experience+= value; break;
+			case "Experience":
+                if (value > 0)
+                    experience += (uint)value;
+                else experience -= (uint)-value;
+                break;
         }
     }
     internal static void Up(string name)

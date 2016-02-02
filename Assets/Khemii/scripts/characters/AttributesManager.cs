@@ -14,19 +14,29 @@ public delegate void AttributesModifyEventArgs(uint value);
     {
         return (Hero.Level * (Hero.Level + 1) / 2) * 1000;
     }
-	internal void ModifyHealth(uint value)
+    internal void SetModifiers(ref uint targetAbility, params decimal[] modifiers)
+    {
+        decimal modifier = 0;
+        for(int i = 0; i < modifiers.Length; i++)
+        {
+            modifier += targetAbility * modifiers[i];
+        }
+        
+        targetAbility += (uint)modifier;
+    }
+	internal void ModifyHealth(int value)
     {
         Hero.Add(value, "Health");
     }
-	internal void ModifyMagic(uint value)
+	internal void ModifyMagic(int value)
     {
         Hero.Add(value, "Magic");
     }
-	internal void ModifyStamina(uint value)
+	internal void ModifyStamina(int value)
     {
         Hero.Add(value, "Stamina");
     }
-	internal void AddExperience(uint value)
+	internal void AddExperience(int value)
 	{
 		Hero.Add (value, "Experience");
 	}

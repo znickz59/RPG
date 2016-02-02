@@ -5,13 +5,14 @@ using UnityEngine;
 	{
 	internal void Unlock<TSkill>() where TSkill : Skill
 	{
-		GameObject.Find ("Skills").GetComponent<TSkill>().enabled = true;
+		GameObject.Find ("Skills").GetComponentInChildren<TSkill>().enabled = true;
 	}
 
 	internal void SkillUp<TSkill>(TSkill ts) where TSkill : Skill
 	{
 		ts.SkillUp ();
 	}
+
 	}
 
 
