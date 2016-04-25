@@ -1,0 +1,54 @@
+<Skill>
+  <Fighter>
+    <Basic>
+   Basic level of Fighter. Up's Hero's Strength at 10%
+    </Basic>
+    <Low>
+   Low level of Fighter. Up's Hero's Strength at 20%
+    </Low>
+    <Medium>
+   Medium level of Fighter. Up's Hero's Strength at 30%
+    </Medium>
+    <High>
+   High level of Fighter. Up's Hero's Strength at 40%
+    </High>
+    <Best>
+   Best level of Fighter. Up's Hero's Strength at 50%
+    </Best>
+  </Fighter>
+  <Wizard>
+    <Basic>
+   Basic level of Wizard. Up's Hero's Willpower at 10%
+    </Basic>
+    <Low>
+   Low level of Wizard. Up's Hero's Willpower at 20%
+    </Low>
+    <Medium>
+   Medium level of Wizard. Up's Hero's Willpower at 30%
+    </Medium>
+    <High>
+   High level of Wizard. Up's Hero's Willpower at 40%
+    </High>
+    <Best>
+   Best level of Wizard. Up's Hero's Willpower at 50%
+    </Best>
+   </Wizard>
+  <Archer>
+    <Basic>
+   Basic level of Archer. Up's Hero's Dexterity at 10%
+    </Basic>
+    <Low>
+   Low level of Archer. Up's Hero's Dexterity at 20%
+    </Low>
+  <Medium>
+   Medium level of Archer. Up's Hero's Dexterity at 30%
+  </Medium>
+  <High>
+   High level of Archer. Up's Hero's Dexterity at 40%
+  </High>
+    <Best>
+   Best level of Archer. Up's Hero's Dexterity at 50%
+    </Best>
+  </Archer>
+
+</Skill>
