@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AttributesManager">
+    <Position X="31" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAYAQAAAAAEgQEAAQAAgAAgIAAACAQA=</HashCode>
+      <FileName>Assets\Khemii\scripts\characters\AttributesManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Character">
+    <Position X="26.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAGEAABAAAAAQAAAAAAAQAAAEAAAABAAAAAAAAABg=</HashCode>
+      <FileName>Assets\Khemii\scripts\characters\Character.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hero">
+    <Position X="24.75" Y="5" Width="1.5" />
+    <Members>
+      <Method Name="Add" Hidden="true" />
+      <Field Name="am" Hidden="true" />
+      <Method Name="Awake" Hidden="true" />
+      <Method Name="FixedUpdate" Hidden="true" />
+      <Method Name="Set" Hidden="true" />
+      <Method Name="Start" Hidden="true" />
+      <Method Name="Up" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAIACAgBAigADVAAAAQAAAARwAAAAEAAAABAAAAAQEM=</HashCode>
+      <FileName>Assets\Khemii\scripts\characters\Hero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NPC">
+    <Position X="29" Y="4.75" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="NPC.Type" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Khemii\scripts\characters\NPC.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Khemii\scripts\characters\NPC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RealNPC">
+    <Position X="29" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAABAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Khemii\scripts\characters\RealNPC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

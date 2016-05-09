@@ -14,8 +14,8 @@ public class Archer : Skill
     {
 	
 	}
-    protected internal override decimal Effect<TAbility>(int index, params TAbility[] Abilities)
+    protected internal override decimal Effect<TAbility>(TAbility Ability)
     {
-        throw new NotImplementedException();
+        return (decimal.Parse(Ability.ToString()) * (decimal)stage * 0.01m);
     }
 }

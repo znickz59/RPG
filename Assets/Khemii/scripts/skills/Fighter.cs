@@ -8,7 +8,7 @@ using UnityEngine;
     { 
 	private static decimal skillEffect = 0;
 	private static new Stage stage = Stage.Basic;
-	internal static Stage S { get { return stage; } }
+	internal static Stage Level { get { return stage; } }
 	internal static decimal SkillEffect { get { return skillEffect; } }
     void Start()
     {
@@ -16,12 +16,11 @@ using UnityEngine;
     }
     void FixedUpdate()
     {
-		skillEffect = Effect (0, Hero.Abils.Strength);
+		skillEffect = Effect (Hero.SecondaryAbils.PhysicalDamage);
     }
-	protected internal override decimal Effect<TAbility> (int index, params TAbility[] Abilities)
+	protected internal override decimal Effect<TAbility> (TAbility Ability)
 	{
-		if(Abilities.Length == 0) throw new Exception();
-		return (decimal.Parse(Abilities[index].ToString ()) * (decimal)stage * 0.01m);
+		return (decimal.Parse(Ability.ToString()) * (decimal)stage * 0.01m);
 	}
 	protected internal override Stage SkillUp ()
 	{

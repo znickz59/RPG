@@ -30,6 +30,8 @@ public class ClickListener : MonoBehaviour
     public void StrengthButton_Click()
     {
         am.StrengthUp();
+        Quest.Current.EndQuest(true);
+        Debug.Log(Quest.Current.ToString());
     }
     public void VitalityButton_Click()
     {

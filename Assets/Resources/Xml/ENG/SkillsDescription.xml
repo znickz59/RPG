@@ -1,36 +1,36 @@
 <Skill>
   <Fighter>
     <Basic>
-   Basic level of Fighter. Up's Hero's Strength at 10%
+    Basic level of Fighter. Increases Hero's physical damage at 10%
     </Basic>
     <Low>
-   Low level of Fighter. Up's Hero's Strength at 20%
+      Low level of Fighter. Increases Hero's physical damage at 20%
     </Low>
     <Medium>
-   Medium level of Fighter. Up's Hero's Strength at 30%
+      Medium level of Fighter. Increases Hero's physical damage at 30%
     </Medium>
     <High>
-   High level of Fighter. Up's Hero's Strength at 40%
+      High level of Fighter. Increases Hero's physical damage at 40%
     </High>
     <Best>
-   Best level of Fighter. Up's Hero's Strength at 50%
+      Best level of Fighter. Increases Hero's physical damage at 50%
     </Best>
   </Fighter>
   <Wizard>
     <Basic>
-   Basic level of Wizard. Up's Hero's Willpower at 10%
+   Basic level of Wizard. Increases Hero's magic damage at 10%
     </Basic>
     <Low>
-   Low level of Wizard. Up's Hero's Willpower at 20%
+   Low level of Wizard. Increases Hero's magic damage at 20%
     </Low>
     <Medium>
-   Medium level of Wizard. Up's Hero's Willpower at 30%
+   Medium level of Wizard. Increases Hero's magic damage at 30%
     </Medium>
     <High>
-   High level of Wizard. Up's Hero's Willpower at 40%
+   High level of Wizard. Increases Hero's magic damage at 40%
     </High>
     <Best>
-   Best level of Wizard. Up's Hero's Willpower at 50%
+   Best level of Wizard. Increases Hero's magic damage at 50%
     </Best>
    </Wizard>
   <Archer>

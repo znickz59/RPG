@@ -14,15 +14,14 @@ using UnityEngine;
 
 	void FixedUpdate()
 		{
-		skillEffect = Effect (0, Hero.Abils.Willpower);
+		skillEffect = Effect ( Hero.Abils.Willpower);
 	}
 
-	protected internal override decimal Effect<TAbility> (int index, params TAbility[] Abilities)
-	{
-		if(Abilities.Length == 0) throw new Exception();
-		return (decimal.Parse(Abilities[index].ToString ()) * (decimal)stage * 0.01m);
-	}
-	protected internal override Stage SkillUp ()
+    protected internal override decimal Effect<TAbility>(TAbility Ability)
+    {
+        return (decimal.Parse(Ability.ToString()) * (decimal)stage * 0.01m);
+    }
+    protected internal override Stage SkillUp ()
 	{
 		if(stage == Stage.Best) return stage;
 		return ++stage;

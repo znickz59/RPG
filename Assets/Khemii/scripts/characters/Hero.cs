@@ -6,10 +6,12 @@ public class Hero : Character
     AttributesManager am = new AttributesManager();
     private static uint maxhealth, maxmagic, maxstamina, experience, requiredExperience, abilityPoints = 0;
     private static Abilities abilities = new Abilities(10, 10, 10, 10, 10, 10);
+    private static SecondaryAbilities secondaryAbilities;
     public static Abilities Abils
     {
         get { return abilities; }
     }
+    public static SecondaryAbilities SecondaryAbils { get { return secondaryAbilities; } }
     public static uint Experience { get { return experience; } }
     public static uint RequiredExperience { get { return requiredExperience; } }
     public static uint AbilityPoints { get { return abilityPoints; } }
@@ -62,7 +64,7 @@ public class Hero : Character
         experience -= requiredExperience;
         level++;
         requiredExperience = am.CalculateRequiredExperience();
-        abilityPoints += 3;
+        abilityPoints += 5;
     }
     private void Check()
     {
@@ -89,6 +91,7 @@ public class Hero : Character
     }
     void Start()
     {
+        
     }
     void FixedUpdate()
     {

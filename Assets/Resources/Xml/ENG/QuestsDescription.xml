@@ -1,0 +1,29 @@
+<Quest>
+  <ID1>
+  <Title>
+    Old Warrior
+  </Title>
+  <Description>
+    Find Lestat de Lioncourt
+  </Description>
+  <Next>
+    7
+  </Next>
+</ID1>
+
+<ID7>
+  <Title>
+    Undead
+  </Title>
+  <Description>
+    Kill Lestat de Lioncourt
+  </Description>
+  <Next>
+    2
+  </Next>
+</ID7>
+
+  <ID2>
+    
+  </ID2>
+</Quest>

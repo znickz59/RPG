@@ -1,14 +1,12 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
 using System.Collections;
-using gobj = UnityEngine.GameObject;
-using vector = UnityEngine.Vector2;
 public class InfoVizualizer : MonoBehaviour
 {
 
     private string info = string.Empty;
     private bool onOver = false;
-    private vector position;
+    private Vector2 position;
 	void Start () 
 	{
 	
@@ -17,14 +15,14 @@ public class InfoVizualizer : MonoBehaviour
 
 	void Update () 
 	{
-        position = new vector(Input.mousePosition.x, Screen.height - Input.mousePosition.y);
+        position = new Vector2(Input.mousePosition.x, Screen.height - Input.mousePosition.y);
     }
     void OnGUI()
     {
         if(onOver)
-        GUI.Box(new Rect(position, new vector(500, 50)), info);
+        GUI.Box(new Rect(position, new Vector2(500, 50)), info);
     }
-	public void OnSkillOver(gobj gobject)
+	public void OnSkillOver(GameObject gobject)
     {
         onOver = true;
         XmlReader xr = new XmlReader();
